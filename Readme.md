@@ -2,9 +2,9 @@
 
 It's just that: an API and a client which send/receive XML data. 
 
-![create product](https://github.com/tcrurav/XmlRESTfulNodeJSfromJS/blob/master/create_product.png)
+![create product](https://github.com/tcrurav/XmlRESTfulNodeJSfromJS/blob/master/web/img/create_product.png)
 
-![show products](https://github.com/tcrurav/XmlRESTfulNodeJSfromJS/blob/master/show_products.png)
+![show products](https://github.com/tcrurav/XmlRESTfulNodeJSfromJS/blob/master/web/img/show_products.png)
 
 It's quite rare nowadays because in most cases you just send/receive JSON data instead of XML.
 
@@ -119,11 +119,11 @@ XSD file in Server:
 
 A validation test offline made with Netbeans IDE. 
 
-![validation test](https://github.com/tcrurav/XmlRESTfulNodeJSfromJS/blob/master/products_validation.png)
+![validation test](https://github.com/tcrurav/XmlRESTfulNodeJSfromJS/blob/master/web/img/products_validation.png)
 
 This is made dinamically in the project with the library xsd-schema-validator.
 
-![validation test](https://github.com/tcrurav/XmlRESTfulNodeJSfromJS/blob/master/products_validation_online.png)
+![validation test](https://github.com/tcrurav/XmlRESTfulNodeJSfromJS/blob/master/web/img/products_validation_online.png)
 
 ## Built With
 
