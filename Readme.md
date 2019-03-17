@@ -2,6 +2,10 @@
 
 It's just that: an API and a client which send/receive XML data. 
 
+![create product](https://github.com/tcrurav/XmlRESTfulNodeJSfromJS/blob/master/create_product.png)
+
+![show products](https://github.com/tcrurav/XmlRESTfulNodeJSfromJS/blob/master/show_products.png)
+
 It's quite rare nowadays because in most cases you just send/receive JSON data instead of XML.
 
 In the "api" directory you will find the API made with NodeJS, libxmljs, xsd-schema-validator and express-xml-bodyparser.
@@ -111,6 +115,15 @@ XSD file in Server:
 </xs:schema>
 ```
 
+# Validation screenshots
+
+A validation test offline made with Netbeans IDE. 
+
+![validation test](https://github.com/tcrurav/XmlRESTfulNodeJSfromJS/blob/master/products_validation.png)
+
+This is made dinamically in the project with the library xsd-schema-validator.
+
+![validation test](https://github.com/tcrurav/XmlRESTfulNodeJSfromJS/blob/master/products_validation_online.png)
 
 ## Built With
 
@@ -120,6 +133,8 @@ XSD file in Server:
 * [express-xml-bodyparser](https://github.com/remind101/express-xml-bodyparser) - For those rare cases when you have to parse incoming raw xml-body requests. This middleware works with any connect- or express-based nodejs application.
 * [AJAX](https://www.w3schools.com/js/js_ajax_intro.asp) - Allows an HTML client to read, update, create and detele data from a web service.
 
+
 ## Acknowledgments
 
 * https://gist.github.com/PurpleBooth/109311bb0361f32d87a2#file-readme-template-md. A very good Readme.md template.
+* https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript. How to Connect to an API with JavaScript.
