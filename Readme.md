@@ -2,10 +2,6 @@
 
 It's just that: an API and a client which send/receive XML data. 
 
-![create product](https://github.com/tcrurav/XmlRESTfulNodeJSfromJS/blob/master/web/img/create_product.png)
-
-![show products](https://github.com/tcrurav/XmlRESTfulNodeJSfromJS/blob/master/web/img/show_products.png)
-
 It's quite rare nowadays because in most cases you just send/receive JSON data instead of XML.
 
 In the "api" directory you will find the API made with NodeJS, libxmljs, xsd-schema-validator and express-xml-bodyparser.
@@ -15,6 +11,16 @@ In the "web" directory you will find the client, just pure HTML, CSS and JavaScr
 This example is nothing special. The client can:
 * Create new products with name and price.
 * Show all available products.
+
+### Screenshots
+
+* Creating a product:
+
+![create product](https://github.com/tcrurav/XmlRESTfulNodeJSfromJS/blob/master/web/img/create_product.png)
+
+* Showing all products:
+
+![show products](https://github.com/tcrurav/XmlRESTfulNodeJSfromJS/blob/master/web/img/show_products.png)
 
 ### Prerequisites
 
