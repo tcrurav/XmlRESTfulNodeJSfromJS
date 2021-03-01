@@ -4,7 +4,7 @@ It's just that: an API and a client which send/receive XML data.
 
 It's quite rare nowadays because in most cases you just send/receive JSON data instead of XML.
 
-In the "api" directory you will find the API made with NodeJS, libxmljs, xsd-schema-validator and express-xml-bodyparser.
+In the "api" directory you will find the API made with NodeJS, xmldom, xsd-schema-validator and express-xml-bodyparser.
 
 In the "web" directory you will find the client, just pure HTML, CSS and JavaScript, using AJAX.
 
@@ -134,7 +134,7 @@ This is made dinamically in the project with the library xsd-schema-validator.
 ## Built With
 
 * [NodeJS](https://nodejs.org/es/) - Node.js un entorno de ejecución para JavaScript
-* [libxmljs](https://github.com/libxmljs/libxmljs) - LibXML bindings for node.js.
+* [xmldom](https://github.com/jindw/xmldom) - A JavaScript implementation of W3C DOM for Node.js.
 * [xsd-schema-validator](https://www.npmjs.com/package/xsd-schema-validator) - Allows XML validation with an XML Schema.
 * [express-xml-bodyparser](https://github.com/remind101/express-xml-bodyparser) - For those rare cases when you have to parse incoming raw xml-body requests. This middleware works with any connect- or express-based nodejs application.
 * [AJAX](https://www.w3schools.com/js/js_ajax_intro.asp) - Allows an HTML client to read, update, create and detele data from a web service.
@@ -144,3 +144,4 @@ This is made dinamically in the project with the library xsd-schema-validator.
 
 * https://gist.github.com/PurpleBooth/109311bb0361f32d87a2#file-readme-template-md. A very good Readme.md template.
 * https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript. How to Connect to an API with JavaScript.
+* https://www.w3schools.com/xml/dom_intro.asp. Understanding the DOM is a must for anyone working with HTML or XML. You can learn a lot with this tutorial.

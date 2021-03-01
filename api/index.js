@@ -9,6 +9,9 @@ var express = require('express'),
     server = http.createServer(app),
     xmlparser = require('express-xml-bodyparser');
 
+var DOMParser = require('xmldom').DOMParser;
+var XMLSerializer = require('xmldom').XMLSerializer;
+
 var cors = require('cors');
 app.use(cors());
 
@@ -21,7 +24,8 @@ app.use(xmlparser());
 var validator = require('xsd-schema-validator');
 var schemaPath = "xsd/products.xsd";
 
-var libxmljs = require("libxmljs");
+// libxmljs not working anymore
+// var libxmljs = require("libxmljs");
 
 //In a more real case this information would be stored in a DB
 var products = '<?xml version="1.0" encoding="UTF-8"?><products></products>';
@@ -43,14 +47,13 @@ app.post('/products', function (req, res, next) {
         }
         console.log(result);
 
-        var xmlProducts = libxmljs.parseXml(products);
-        var xmlReqRawBody = libxmljs.parseXml(reqRawBody);
+        var xmlReqRawBody = new DOMParser().parseFromString(reqRawBody, 'application/xml');
+        var xmlProducts = new DOMParser().parseFromString(products);
 
-        var gProducts = xmlProducts.get('//products');
-        var gNewProducts = xmlReqRawBody.get('//product');
-        gProducts.addChild(gNewProducts);
+        xmlProductToAdd = xmlReqRawBody.getElementsByTagName("product")[0];
+        xmlProducts.getElementsByTagName("products")[0].appendChild(xmlProductToAdd);
 
-        products = gProducts.toString();
+        products = new XMLSerializer().serializeToString(xmlProducts);
 
         res.set('application/xml').send(`<response>Added!</response>`);
     });
