@@ -83,9 +83,9 @@ function showAllProducts(data) {
 
     let xmlProducts = xmlData.getElementsByTagName("product");
 
-    console.log(xmlProducts);
-    console.log(xmlProducts[0]);
-    console.log(xmlProducts[0].childNodes[0].childNodes[0]);
+    // console.log(xmlProducts);
+    // console.log(xmlProducts[0]);
+    // console.log(xmlProducts[0].childNodes[0].childNodes[0]);
 
 
     let result = "";

@@ -12,6 +12,17 @@ This example is nothing special. The client can:
 * Create new products with name and price.
 * Show all available products.
 
+###IMPORTANT:
+
+This project uses the package express-xml-bodyparser which needs JAVA installed in the system.
+
+This project was tested with JDK 1.8.0_202. You can test the JDK installed in your Windows for example with the following command:
+
+```
+echo $JAVA_HOME
+C:\Program Files\Java\jdk1.8.0_202
+```
+
 ### Screenshots
 
 * Creating a product:

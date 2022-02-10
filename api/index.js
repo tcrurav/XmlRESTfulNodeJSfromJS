@@ -3,6 +3,11 @@
 //https://www.npmjs.com/package/xsd-schema-validator
 //https://github.com/remind101/express-xml-bodyparser
 
+//library xsd-schema-validator needs JAVA. 
+//Tested working with:
+//$ echo $JAVA_HOME
+//C:\Program Files\Java\jdk1.8.0_202
+
 var express = require('express'),
     app = express(),
     http = require('http'),
@@ -45,7 +50,6 @@ app.post('/products', function (req, res, next) {
             res.set('application/xml').send(`<response>Error</response>`);
             return;
         }
-        console.log(result);
 
         var xmlReqRawBody = new DOMParser().parseFromString(reqRawBody, 'application/xml');
         var xmlProducts = new DOMParser().parseFromString(products);
@@ -59,4 +63,6 @@ app.post('/products', function (req, res, next) {
     });
 });
 
-server.listen(1337);
+server.listen(1337, () => {
+    console.log(`Example Server using package xsd-schema-validator listening on port 1337`);
+});
