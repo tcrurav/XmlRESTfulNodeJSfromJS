@@ -12,7 +12,7 @@ This example is nothing special. The client can:
 * Create new products with name and price.
 * Show all available products.
 
-###IMPORTANT:
+### IMPORTANT:
 
 This project uses the package express-xml-bodyparser which needs JAVA installed in the system.
 
