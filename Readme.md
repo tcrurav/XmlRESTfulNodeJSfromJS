@@ -14,9 +14,9 @@ This example is nothing special. The client can:
 
 ### IMPORTANT:
 
-This project uses the package express-xml-bodyparser which needs JAVA installed in the system.
+This project uses the package express-xml-bodyparser which needs JAVA. You can find the details in https://www.npmjs.com/package/xsd-schema-validator
 
-This project was tested with JDK 1.8.0_202. You can test the JDK installed in your Windows for example with the following command:
+This project was tested with JDK 1.8.0_202. To check your installed JDK version you can use the following command:
 
 ```
 echo $JAVA_HOME
